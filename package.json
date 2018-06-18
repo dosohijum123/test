@@ -4,7 +4,9 @@
   "description": "NodeJS port of Dendroid server",
   "main": "index.js",
   "scripts": {
-    "postinstall": "node_modules/.bin/sequelize db:migrate; ./node_modules/.bin/gulp",
+    "mydb": "node_modules/.bin/sequelize db:migrate",
+    "mygulp": "node_modules/.bin/gulp",
+    "postinstall": "npm run mydb && npm run mygulp",
     "start": "node index.js"
   },
   "repository": {
@@ -23,19 +25,19 @@
   },
   "homepage": "https://github.com/adonespitogo/dendroid-nodejs#readme",
   "dependencies": {
-    "body-parser": "^1.16.1",
-    "express": "^4.14.1",
-    "gulp": "^3.9.1",
-    "gulp-angular-templatecache": "^2.0.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "gulp": "^4.0.0",
+    "gulp-angular-templatecache": "^2.2.1",
     "gulp-concat": "^2.6.1",
     "mysql": "^2.13.0",
     "q": "^1.4.1",
     "require-dir": "^0.3.1",
-    "sequelize": "^3.30.2",
-    "sequelize-cli": "^2.5.1",
-    "socket.io": "^1.7.2"
+    "sequelize": "^4.37.10",
+    "sequelize-cli": "^4.0.0",
+    "socket.io": "^2.1.1"
   },
   "devDependencies": {
-    "gulp-watch": "^4.3.11"
+    "gulp-watch": "^5.0.0"
   }
 }
