@@ -4,10 +4,10 @@
     "collate": "utf8mb4_unicode_ci"
   },
   "development": {
-    "username": "username",
-    "password": "PassworD",
-    "database": "adobot",
-    "host": "mysql://mysql:3306/",
+    "username": "umpoxggek9ozfzym",
+    "password": "lE8sRTcvqARr9POQYnK",
+    "database": "bmhb9scvf",
+    "host": "bmhb9scvf-mysql.services.clever-cloud.com",
     "dialect": "mysql",
     "admin" : {
       "username": "AndroidSpy",
